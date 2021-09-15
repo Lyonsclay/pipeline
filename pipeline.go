@@ -7,10 +7,10 @@ package pipeline
 
 import (
 	"encoding/csv"
+	"errors"
 	"fmt"
 	"github.com/pkg/profile"
 	"log"
-	"errors"
 	"os"
 	"sync"
 )
@@ -21,20 +21,18 @@ type Range struct {
 }
 
 type Job struct {
-	ConnString    string
+	ConnString     string
 	TotalRowsQuery string
-	TableName     string
-	IndexField    string
-	RowType       Row
-
-	TotalPages int
-	MaxRows  int
-
-	PageSize     int
-	ProcessLimit int
-	PageRange    Range
-	Pages        []Page
-	Pipeline     []Stager
+	TableName      string
+	IndexField     string
+	RowType        Row
+	TotalPages     int
+	MaxRows        int
+	PageSize       int
+	ProcessLimit   int
+	PageRange      Range
+	Pages          []Page
+	Pipeline       []Stager
 }
 
 type Stager interface {
@@ -58,7 +56,7 @@ type Row Packer
 
 type Page struct {
 	Number     int
-	TotalRows   int
+	TotalRows  int
 	RowType    Row
 	IndexField string
 	Rows       []Row
