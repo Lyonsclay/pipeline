@@ -1,0 +1,38 @@
+Type: cpu
+Time: Sep 13, 2021 at 10:34pm (EDT)
+Duration: 210.40ms, Total samples = 0 
+Showing nodes accounting for 0, 0% of 0 total
+      flat  flat%   sum%        cum   cum%
+Type: cpu
+Time: Sep 13, 2021 at 10:38pm (EDT)
+Duration: 1.05s, Total samples = 30ms ( 2.85%)
+Showing nodes accounting for 30ms, 100% of 30ms total
+      flat  flat%   sum%        cum   cum%
+      10ms 33.33% 33.33%       10ms 33.33%  runtime.kevent
+      10ms 33.33% 66.67%       10ms 33.33%  runtime.pthread_cond_wait
+      10ms 33.33%   100%       10ms 33.33%  runtime.typehash
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgtype.NewConnInfo
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgtype.NewConnInfo.func1
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgx/v4.ConnectConfig (inline)
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgx/v4.connect
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgx/v4/pgxpool.Connect
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgx/v4/pgxpool.ConnectConfig
+         0     0%   100%       10ms 33.33%  github.com/jackc/pgx/v4/pgxpool.ConnectConfig.func1
+         0     0%   100%       10ms 33.33%  github.com/jackc/puddle.(*Pool).Acquire
+         0     0%   100%       10ms 33.33%  github.com/jackc/puddle.(*Pool).constructResourceValue (inline)
+         0     0%   100%       10ms 33.33%  pipeline.CorelogicStage.QueryPage
+         0     0%   100%       10ms 33.33%  pipeline.Job.ProcessPage
+         0     0%   100%       10ms 33.33%  pipeline.Job.Run.func2
+         0     0%   100%       10ms 33.33%  reflect.SliceOf
+         0     0%   100%       20ms 66.67%  runtime.findrunnable
+         0     0%   100%       10ms 33.33%  runtime.mPark
+         0     0%   100%       10ms 33.33%  runtime.mapaccess2
+         0     0%   100%       20ms 66.67%  runtime.mcall
+         0     0%   100%       10ms 33.33%  runtime.netpoll
+         0     0%   100%       10ms 33.33%  runtime.nilinterhash
+         0     0%   100%       10ms 33.33%  runtime.notesleep
+         0     0%   100%       20ms 66.67%  runtime.park_m
+         0     0%   100%       20ms 66.67%  runtime.schedule
+         0     0%   100%       10ms 33.33%  runtime.semasleep
+         0     0%   100%       10ms 33.33%  runtime.stopm
+         0     0%   100%       10ms 33.33%  sync.(*Map).Load

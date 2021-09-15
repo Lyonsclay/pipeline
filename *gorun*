@@ -1,0 +1,6 @@
+go run: cannot run *_test.go files (/Users/clay/developer/eltoro/analyticsml-bounded-areas/pipeline/stage_test.go)
+Type: cpu
+Time: Sep 13, 2021 at 10:34pm (EDT)
+Duration: 210.40ms, Total samples = 0 
+Showing nodes accounting for 0, 0% of 0 total
+      flat  flat%   sum%        cum   cum%
